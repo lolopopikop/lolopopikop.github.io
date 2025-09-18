@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+
+<!-- комментарий в HTML -->
+
+<!-- в первой строке мы сообщаем браузеру,
+  что это документ HTML5 -->
+
+<html lang="ru">
+
+  <head>
+    <title>КубГУ</title>
+  </head>
+
+  <body>
+          <h1>Форма регистрации</h1>
+
+          <form action="/"
+                method="POST">
+
+              <label>
+                  Введите ваше ФИО:<br />
+                  <input name="field-name-1"
+                         placeholder="Фамилия Имя Отчество" />
+              </label><br />
+
+              <label>
+                  Ваш номер телефона:<br />
+                  <input name="field-phone"
+                         placeholder="+7(___)___ __ __" />
+              </label><br />
+
+              <label>
+                  Ваш email:<br />
+                  <input name="field-email"
+                         type="email"
+                         placeholder="example@gmail.com" />
+              </label><br />
+
+              <label>
+                  Ваша дата рождения:<br />
+                  <input name="field-date"
+                         value="2000-01-01"
+                         type="date" />
+              </label><br />
+
+              Ваш пол:<br />
+              <label>
+                  <input type="radio" checked="checked"
+                         name="radio-group-1" value="Мужской" />
+                  Мужской
+              </label>
+              <label>
+                  <input type="radio"
+                         name="radio-group-1" value="Женский" />
+                  Женский
+              </label><br />
+
+              <label>
+                  Ваш любимый язык программирования:
+                  <br />
+                  <select name="field-name-4[]"
+                          multiple="multiple">
+                      <option value="Pascal">Pascal</option>
+                      <option value="C" selected="selected">C</option>
+                      <option value="C++" selected="selected">C++</option>
+                      <option value="C#" selected="selected">C#</option>
+                      <option value="JavaScript" selected="selected">JavaScript</option>
+                      <option value="PHP" selected="selected">PHP</option>
+                      <option value="Python" selected="selected">Python</option>
+                      <option value="Java" selected="selected">Java</option>
+                      <option value="Haskel" selected="selected">Haskel</option>
+                      <option value="Prolog" selected="selected">Prolog</option>
+                      <option value="Scala" selected="selected">Scala</option>
+                      <option value="Go" selected="selected">Go</option>
+                      <option value="Rust" selected="selected">Rust</option>
+                  </select>
+              </label><br />
+
+              <label>
+                  Ваша биография:<br />
+                  <textarea name="field-name-2"></textarea>
+              </label><br />
+
+              Контракт:<br />
+              <label>
+                  <input type="checkbox" checked="checked"
+                         name="check-1" />
+                  С контрактом ознакомлен(a)
+              </label><br />
+
+              <input type="submit" value="Сохранить" />
+      </section>
+
+      <div style="height: 500px;"></div>
+
+
+  </body>
+
+</html>
+ 
